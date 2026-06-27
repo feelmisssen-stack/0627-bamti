@@ -348,6 +348,137 @@ button {
   font-size: 14px;
 }
 
+.counseling-panel {
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.counseling-panel > .section-title h3 {
+  font-size: 20px;
+}
+
+.counseling-selected {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-strong);
+}
+
+.counseling-selected-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.counseling-selected-block h4 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.counseling-selected-block p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.counseling-empty {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.counseling-field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.counseling-field label {
+  font-weight: 800;
+}
+
+.counseling-field textarea {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px 14px;
+  resize: vertical;
+  background: #ffffff;
+  color: var(--ink);
+  outline: none;
+}
+
+.counseling-field textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.13);
+}
+
+.counseling-preview {
+  margin-bottom: 16px;
+}
+
+.counseling-preview h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.counseling-preview pre {
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #f8fafc;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.counseling-actions {
+  margin-bottom: 12px;
+}
+
+.counseling-loading {
+  margin: 0 0 12px;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.counseling-result {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+
+.counseling-disclaimer {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.counseling-select-btn {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.student-card.is-selected {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15), var(--shadow);
+}
+
 .hidden {
   display: none !important;
 }
@@ -355,7 +486,8 @@ button {
 @media (max-width: 860px) {
   .login-layout,
   .student-layout,
-  .admin-grid {
+  .admin-grid,
+  .counseling-selected-grid {
     grid-template-columns: 1fr;
   }
 
